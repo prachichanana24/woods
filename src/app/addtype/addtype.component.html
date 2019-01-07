@@ -17,7 +17,8 @@
                               </div>
                           </div>
                           
-                          <button (click)="addType()" mat-raised-button type="submit" class="btn btn-danger pull-right">Add</button>
+                          <a (click)="addType()" mat-raised-button type="submit" class="btn btn-danger pull-right">{{action}}</a>
+                          <a routerLink="/foodtypes" mat-raised-button type="submit" class="btn btn-danger pull-right">Cancel</a>
                           <div class="clearfix"></div>
                       </form>
                   </div>

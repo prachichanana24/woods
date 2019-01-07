@@ -21,10 +21,10 @@
                                           {{i+1}}
                                       </td>
                                       <td>
-                                          {{t}}
+                                          {{t.name}}
                                       </td>
-                                      <td><a class="primary"><i class="material-icons">edit</i></a></td>
-                                      <td><a class="primary"><i class="material-icons">delete</i></a></td>
+                                      <td><a (click)="editType(t)" class="primary myButton"><i class="material-icons">edit</i></a></td>
+                                      <td><a (click)="deleteType(t)" class="primary myButton"><i class="material-icons">delete</i></a></td>
                                   </tr>
                               </tbody>
                           </table>
