@@ -10,7 +10,7 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
 import { FoodtypeComponent } from '../../foodtype/foodtype.component';
 import { AddtypeComponent } from '../../addtype/addtype.component';
 import { AdditemComponent } from '../../additem/additem.component';
-
+import { ShowdetailComponent } from '../../showdetail/showdetail.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 
 export const AdminLayoutRoutes: Routes = [
@@ -40,7 +40,7 @@ export const AdminLayoutRoutes: Routes = [
     // }, {
     //     path: '',
     //     children: [ {
-    //         path: 'maps',
+    //         path: 'Order',
     //         component: MapsComponent
     //     }]
     // }, {
@@ -65,5 +65,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'upgrade',        component: UpgradeComponent },
     { path: 'addtype',        component: AddtypeComponent },
-     { path: 'additem',        component: AdditemComponent }
+     { path: 'additem',        component: AdditemComponent },
+     { path: 'showdetail',        component: ShowdetailComponent }
 ];
