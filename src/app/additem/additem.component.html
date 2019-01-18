@@ -1,0 +1,43 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-8">
+              <div class="card">
+                  <div class="card-header card-header-danger">
+                      <h4 class="card-title">Add Food Items</h4>
+                  </div>
+                  <div class="card-body">
+                      <form [formGroup]="foodItemsForm">
+                          
+                          <div class="row">
+                              <div class="col-md-12">
+                                <mat-form-field class="example-full-width">
+                                  <input formControlName="name" matInput placeholder="Food Item" type="text">
+                                    
+                                </mat-form-field>
+                                  <mat-form-field>
+                                  
+                                  <mat-select formControlName="type">
+                                      <mat-option *ngFor="let t of types" [value]="t.name">{{t.name}}
+                                      </mat-option>
+                                        
+                                  </mat-select>
+                                </mat-form-field>
+                                  <mat-form-field>
+                                  
+                                  <input formControlName="cost" matInput placeholder="Food Cost" type="number">
+                                      </mat-form-field>
+                                  
+                              </div>
+                          </div>
+                          
+                          <a (click)="addItem()" mat-raised-button type="submit" class="btn btn-danger pull-right">{{action}}</a>
+                          <a routerLink="/fooditems" mat-raised-button type="submit" class="btn btn-danger pull-right">Cancel</a>
+                          <div class="clearfix"></div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
