@@ -14,7 +14,7 @@ import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { FoodtypeComponent } from '../../foodtype/foodtype.component';
 import { AddtypeComponent } from '../../addtype/addtype.component';
 import { AdditemComponent } from '../../additem/additem.component';
-
+import { ShowdetailComponent } from '../../showdetail/showdetail.component';
 
 import {
   MatButtonModule,
@@ -48,7 +48,8 @@ import {
     UpgradeComponent,
     FoodtypeComponent,
     AddtypeComponent,
-    AdditemComponent
+    AdditemComponent,
+    ShowdetailComponent
   ]
 })
 

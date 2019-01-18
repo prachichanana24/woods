@@ -23,6 +23,7 @@ import {
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import * as firebase from 'firebase';
+import { ShowdetailComponent } from './showdetail/showdetail.component';
 
 
 // Initialize Firebase
