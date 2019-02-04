@@ -24,6 +24,7 @@ import {
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import * as firebase from 'firebase';
 import { ShowdetailComponent } from './showdetail/showdetail.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 
 // Initialize Firebase

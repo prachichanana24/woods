@@ -15,6 +15,7 @@ import { FoodtypeComponent } from '../../foodtype/foodtype.component';
 import { AddtypeComponent } from '../../addtype/addtype.component';
 import { AdditemComponent } from '../../additem/additem.component';
 import { ShowdetailComponent } from '../../showdetail/showdetail.component';
+import { FeedbackComponent } from '../../feedback/feedback.component';
 
 import {
   MatButtonModule,
@@ -49,7 +50,8 @@ import {
     FoodtypeComponent,
     AddtypeComponent,
     AdditemComponent,
-    ShowdetailComponent
+    ShowdetailComponent,
+    FeedbackComponent
   ]
 })
 

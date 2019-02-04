@@ -12,6 +12,7 @@ import { AddtypeComponent } from '../../addtype/addtype.component';
 import { AdditemComponent } from '../../additem/additem.component';
 import { ShowdetailComponent } from '../../showdetail/showdetail.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
+import { FeedbackComponent } from '../../feedback/feedback.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -65,6 +66,8 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'upgrade',        component: UpgradeComponent },
     { path: 'addtype',        component: AddtypeComponent },
-     { path: 'additem',        component: AdditemComponent },
-     { path: 'showdetail',        component: ShowdetailComponent }
+    { path: 'additem',        component: AdditemComponent },
+    { path: 'showdetail',        component: ShowdetailComponent },
+    { path: 'feedback',        component: FeedbackComponent }
+
 ];
