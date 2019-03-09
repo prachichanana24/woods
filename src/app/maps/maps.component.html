@@ -1,3 +1,4 @@
+<h2   style="background-image: url(assets/img/faces/background.jpg)" >
 <div class="row">  
   <div class="col-lg-12 grid-margin stretch-card">
     <div class="card">
@@ -10,7 +11,7 @@
             <thead>
               <tr>
                 <th>
-                  User Id
+                 Sr no.
                 </th>
                 <th>
                   Name
@@ -18,7 +19,10 @@
                   <th> Contact
                   </th>
                 <th>
-                  Order Status
+                 Branch
+                </th>
+                  <th>
+                Delivery time
                 </th>
                 <th>
                  Details
@@ -26,21 +30,29 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr *ngFor="let item of orders; let i = index">
                 <td>
-                  1
+                  {{i+ 1}}
                 </td>
                 <td>
-                 Prachi c
-                </td>
+                    {{item.user.name}}
+                  </td>
                 <td>
-                96385210
-                </td>
-                   <td>
-               <button mat-raised-button class="btn btn-cool" (click)="showNotification('top','right')">Status</button>
+                    {{item.user.mob}}
                 </td>
                   <td>
-                      <button mat-raised-button class="btn btn-danger" (click)="Details()">Show</button>
+                    {{item.user.branch}}
+                </td>
+                  <td>
+                    {{item.user.pickup}}
+                </td>
+<!--
+                   <td>
+               <button mat-raised-button class="btn btn-success"(click)="showNotification('top','right')">Status</button>
+                </td>
+-->
+                  <td>
+                      <button mat-raised-button class="btn btn-danger" (click)="Details(item )">Show</button>
                   </td>
               </tr>
             </tbody>

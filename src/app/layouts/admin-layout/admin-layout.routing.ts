@@ -8,11 +8,12 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { FoodtypeComponent } from '../../foodtype/foodtype.component';
-import { AddtypeComponent } from '../../addtype/addtype.component';
+//import { AddtypeComponent } from '../../addtype/addtype.component';
 import { AdditemComponent } from '../../additem/additem.component';
 import { ShowdetailComponent } from '../../showdetail/showdetail.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { FeedbackComponent } from '../../feedback/feedback.component';
+import { AddfoodtypeComponent } from '../../addfoodtype/addfoodtype.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -65,7 +66,8 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'upgrade',        component: UpgradeComponent },
-    { path: 'addtype',        component: AddtypeComponent },
+    //{ path: 'addtype1',        component: AddtypeComponent },
+        { path: 'addtype',        component: AddfoodtypeComponent },
     { path: 'additem',        component: AdditemComponent },
     { path: 'showdetail',        component: ShowdetailComponent },
     { path: 'feedback',        component: FeedbackComponent }

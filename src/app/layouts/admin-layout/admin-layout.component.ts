@@ -80,7 +80,5 @@ export class AdminLayoutComponent implements OnInit {
       if (navigator.platform.toUpperCase().indexOf('MAC') >= 0 || navigator.platform.toUpperCase().indexOf('IPAD') >= 0) {
           bool = true;
       }
-      return bool;
-  }
-
+      return bool;}
 }

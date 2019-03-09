@@ -12,10 +12,11 @@ import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { FoodtypeComponent } from '../../foodtype/foodtype.component';
-import { AddtypeComponent } from '../../addtype/addtype.component';
+
 import { AdditemComponent } from '../../additem/additem.component';
 import { ShowdetailComponent } from '../../showdetail/showdetail.component';
 import { FeedbackComponent } from '../../feedback/feedback.component';
+import { AddfoodtypeComponent } from '../../addfoodtype/addfoodtype.component';
 
 import {
   MatButtonModule,
@@ -48,10 +49,11 @@ import {
     NotificationsComponent,
     UpgradeComponent,
     FoodtypeComponent,
-    AddtypeComponent,
+    
     AdditemComponent,
     ShowdetailComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    AddfoodtypeComponent
   ]
 })
 

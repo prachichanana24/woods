@@ -15,20 +15,28 @@
                 <th>
                   Amount
                 </th>
+                   <th>
+                  Quantity
+                </th>
+                 
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr *ngFor="let item of data.cart">
                 <td>
-                  maggie
+                  {{item.name}}
                 </td>
                 <td>
-               30
+               {{item.cost}}
                 </td>
-                    <div class="col-md-4">
-                            <tr>Total:</tr>
-                              </div>
+                   <td>
+               {{item.quantity}}
+                </td>
+                    
               </tr>
+                <div class="col-md-9">
+                            <tr>Total : {{total}} /-</tr>
+                              </div>
             </tbody>
           </table>
         </div>

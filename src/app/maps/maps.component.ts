@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router} from '@angular/router';
 import * as firebase from 'firebase';
+import {RestService} from '../rest.service';
 @Component({
   selector: 'app-maps',
   templateUrl: './maps.component.html',
@@ -9,7 +10,7 @@ import * as firebase from 'firebase';
 export class MapsComponent implements OnInit {
     typeRef = firebase.database().ref('orders');
     orders = [];
-  constructor(private r: Router) {  }
+  constructor(private r: Router,private rest: RestService) {  }
   ngOnInit() {
    this.typeRef.on('value', x => {
     console.log(x.val());
@@ -20,12 +21,12 @@ export class MapsComponent implements OnInit {
   
       showNotification(from, align){
       const type = ['','info','success','warning','danger'];
-
-      const color = Math.floor((Math.random() * 4) + 1);
-
+  const color = Math.floor((Math.random() * 4) + 1);
+          
       
-      }
- Details(){
+    }
+ Details(item){
+     this.rest.setData(item);
  this.r.navigate(['showdetail']);
  }
  }
@@ -38,7 +39,7 @@ function snapshotToArray(snapshot) {
         item.key = childSnapshot.key;
 
         returnArr.push(item);
-    });
+    }); 
 
     return returnArr;
 };

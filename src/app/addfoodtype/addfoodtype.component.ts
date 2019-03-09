@@ -3,15 +3,14 @@ import {FormGroup, FormControl, Validators} from '@angular/forms';
 import {Router,ActivatedRoute} from '@angular/router';
 
 import * as firebase from 'firebase';
-
 @Component({
-  selector: 'app-addtype',
-  templateUrl: './addtype.component.html',
-  styleUrls: ['./addtype.component.scss']
+  selector: 'app-addfoodtype',
+  templateUrl: './addfoodtype.component.html',
+  styleUrls: ['./addfoodtype.component.scss']
 })
-export class AddtypeComponent implements OnInit {
+export class AddfoodtypeComponent implements OnInit {
 
-action: string = "Add";
+  action: string = "Add";
 currentKey: string = "";
     foodTypeForm = new FormGroup({
     name: new FormControl('')
@@ -30,7 +29,7 @@ currentKey: string = "";
             this.action = "Add";
         else
             this.action = "Edit";
-        //this.foodTypeForm.controls.name.setValue(p.name);
+        //this.foodItemsForm.controls.name.setValue(p.name);
         this.foodTypeForm.patchValue(p);
         console.log(this.foodTypeForm.value);
     });
@@ -50,3 +49,5 @@ currentKey: string = "";
         this.r.navigate(['foodtypes']);
     }
 }
+
+                        

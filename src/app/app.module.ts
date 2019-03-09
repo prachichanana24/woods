@@ -42,11 +42,12 @@ import { FeedbackComponent } from './feedback/feedback.component';
   imports: [
     BrowserAnimationsModule,
     FormsModule,
+    Dashboard,
     HttpModule,
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
-    
+   
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
     })
@@ -54,10 +55,6 @@ import { FeedbackComponent } from './feedback/feedback.component';
   declarations: [
     AppComponent,
     AdminLayoutComponent
-    
-    
-    
-
   ],
   providers: [],
   bootstrap: [AppComponent]
