@@ -10,11 +10,12 @@
 .font{
       position: absolute;
   top: 50%;
-  left: 50%;
+  left:49%;
   transform: translate(-50%, -50%);
   font-family: "Arial Black", Times, serif;
   font-size: 50px;
-    font-weight: 500;
+  font-weight: 500;
+    
 }
 
 .container {

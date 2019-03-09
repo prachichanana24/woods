@@ -42,7 +42,6 @@ import { FeedbackComponent } from './feedback/feedback.component';
   imports: [
     BrowserAnimationsModule,
     FormsModule,
-    Dashboard,
     HttpModule,
     ComponentsModule,
     RouterModule,

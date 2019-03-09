@@ -49,7 +49,6 @@ import {
     NotificationsComponent,
     UpgradeComponent,
     FoodtypeComponent,
-    
     AdditemComponent,
     ShowdetailComponent,
     FeedbackComponent,
